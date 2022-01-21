@@ -1,0 +1,35 @@
+Given N × M array of integers, and Q queries, for each query, find the minimum and maximum values of the integers in the rectangle with the upper left corner (0, 0) and the lower right corner (n, m), given Q equals the values of n and m separated by a space.
+Input:
+The first line contains three integers N, M, and Q (1 ≤ N, M, Q ≤ 10000) — the size of the array N × M and the number of queries Q.
+Each of the following N lines contains M integers separated by a space — the array.
+Each of the next Q lines contains four integers x1, x2, y1, y2 (1 ≤ x1, x2 ≤ N, 1 ≤ y1, y2 ≤ M) — the upper left and lower right corners of the rectangle.
+Output:
+For each query, print the result minimum and maximum of the integers in the rectangle separated by a space.
+Sample Input:
+4 5 3
+2 3 1 6 2
+3 2 1 5 3
+5 6 2 3 1
+9 6 3 7 2
+2 4 1 3
+2 5 3 4
+1 2 2 4
+Sample Output:
+1 9
+1 7
+1 6
+Explanation:
+for the first query, the rectangle is:
+3 2 1
+5 6 2
+9 6 3
+the minimum number in the rectangle is 1, and the maximum number is 9, so the result is 1 9.
+for the second query, the rectangle is:
+1 5
+2 3
+3 7
+the minimum number in the rectangle is 1, and the maximum number is 7, so the result is 1 7.
+for the third query, the rectangle is:
+3 1 6
+2 1 5
+the minimum number in the rectangle is 1, and the maximum number is 6, so the result is 2 6.
